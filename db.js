@@ -1,6 +1,8 @@
+const data = require('./.env.js')
+
 const Sequelize = require('sequelize');
-                                //database username   password
-const sequelize = new Sequelize('gamedb', 'postgres', 'ghastb0i', {
+//database username   password
+const sequelize = new Sequelize('gamedb', data.userName, data.password, {
     host: 'localhost',
     dialect: 'postgres'
 })
